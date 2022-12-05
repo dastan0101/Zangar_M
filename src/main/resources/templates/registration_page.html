@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration -- Zangar-M</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="" th:href="@{/css/home.css}">
+    <link rel="stylesheet" href="" th:href="@{/css/registration.css}">
+    <script src="" th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js}"></script>
+    <script src="" th:src="@{js/multi_lang.js}" type="text/javascript"></script>
+
+</head>
+<body>
+
+<ul class="my_nav">
+    <li>
+        <a href="" th:href="@{/}" class="lang" key="home">Home</a>
+    </li>
+    <li>
+        <a href="" class="lang" key="about">About Us</a>
+    </li>
+    <li>
+        <a class="lang" key="courses" th:href="@{/courses}">Courses</a>
+    </li>
+    <li>
+        <a href="" class="lang" key="teacher">Teachers</a>
+    </li>
+    <li>
+        <a href="" class="lang" key="success">Our successes</a>
+    </li>
+    <li>
+        <a class="lang" key="users" th:href="@{/list_users}">Users</a>
+    </li>
+    <li>
+        <a href="" class="lang" key="contact">Contact Us</a>
+    </li>
+    <li>
+        <a href="" th:href="@{/login}" class="lang" key="login">Login</a>
+    </li>
+    <li>
+        <a href="" th:href="@{/register}" class="lang" key="registration">Registration</a>
+    </li>
+    <li class="lang-en">
+        <button id="en" class="translate">
+            <img src="" th:src="@{/images/en.jpg}" alt="enflag">
+        </button>
+    </li>
+    <li class="lang-ru">
+        <button id="ru" class="translate">
+            <img src="" th:src="@{/images/ru.jpg}" alt="ruflag">
+        </button>
+    </li>
+    <li class="lang-kz">
+        <button id="kz" class="translate">
+            <img src="" th:src="@{/images/kz.jpg}" alt="kzflag">
+        </button>
+    </li>
+</ul>
+
+<div class="container text-center" id="cont">
+    <div class="text-center">
+        <h1>User registration - Sign Up</h1>
+    </div>
+    <div>
+        <form th:action="@{/process_register}" method="post"
+              style="max-width: 600px; margin: 0 auto;"
+              th:object="${user}">
+            <div class="m-3">
+                <div class="form-group row">
+                    <label class="col-form-label col-4">E-mail</label>
+                    <div class="col-8">
+                        <input type="email" class="form-control" th:field="*{email}" required/>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-4">Password</label>
+                    <div class="col-8">
+                        <input type="password" class="form-control" th:field="*{password}" required
+                                minlength="6" maxlength="12"/>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-4">First Name</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" th:field="*{firstName}" required
+                               minlength="2" maxlength="15"/>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-4">Last Name</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" th:field="*{lastName}" required
+                               minlength="2" maxlength="15"/>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-warning">Sign Up</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

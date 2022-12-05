@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zangar-M</title>
+    <base href="/">
+    <link rel="stylesheet" href="" th:href="@{/css/home.css}">
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <script src="" th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js}"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="" th:src="@{js/multi_lang.js}" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        <ul class="my_nav">
+            <li>
+                <a href="" th:href="@{/}" class="lang" key="home">Home</a>
+            </li>
+            <li>
+                <a href="" class="lang" key="about">About Us</a>
+            </li>
+            <li>
+                <a class="lang" key="courses" th:href="@{/courses}">Courses</a>
+            </li>
+            <li>
+                <a href="" class="lang" key="teacher">Teachers</a>
+            </li>
+            <li>
+                <a href="" class="lang" key="success">Our successes</a>
+            </li>
+            <li>
+                <a class="lang" key="users" th:href="@{/list_users}">Users</a>
+            </li>
+            <li>
+                <a href="" class="lang" key="contact">Contact Us</a>
+            </li>
+            <li>
+                <a href="" th:href="@{/login}" class="lang" key="login">Login</a>
+            </li>
+            <li>
+                <a href="" th:href="@{/register}" class="lang" key="registration">Registration</a>
+            </li>
+            <li class="lang-en">
+                <button id="en" class="translate">
+                    <img src="" th:src="@{/images/en.jpg}" alt="enflag">
+                </button>
+            </li>
+            <li class="lang-ru">
+                <button id="ru" class="translate">
+                    <img src="" th:src="@{/images/ru.jpg}" alt="ruflag">
+                </button>
+            </li>
+            <li class="lang-kz">
+                <button id="kz" class="translate">
+                    <img src="" th:src="@{/images/kz.jpg}" alt="kzflag">
+                </button>
+            </li>
+        </ul>
+        <div id="my_body">
+            <div class="all_one_row">
+                <div id="logo">
+                    <img src="" th:src="@{/images/Logo.jpg}">
+                </div>
+                <h2 class="lang" key="boarding">Boarding school Zangar-M</h2>
+            </div>
+            <img src="" th:src="@{/images/background.jpg}">
+            <div id="info">
+                <p class="lang" key="reach">Reach your goal with us</p>
+                <h3 class="lang" key="best">Zangar-M is the best investment in education</h3>
+            </div>
+        </div>
+        <div id="slider">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img src="" th:src="@{/images/1_slide.jpg}" alt="Los Angeles" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Eng</h3>
+                        <p>LA is always so much fun!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="" th:src="@{/images/2_slide.jpg}" alt="Chicago" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Rus</h3>
+                        <p>Thank you, Chicago!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="" th:src="@{/images/3_slide.jpg}" alt="New York" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Kaz</h3>
+                        <p>We love the Big Apple!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <div id="feature">
+        <div>
+            <h2 class="lang" key="features">Features of training with us</h2>
+        </div>
+
+        <div class="all_one_row">
+            <div class="margin">
+                <div class="my_block">
+                    <div class="small_icon"><img src="" th:src="@{/images/mark.png}"></div>
+                    <div class="lang" key="">Continuous testing to determine the level</div>
+                </div>
+                <div class="my_block">
+                    <div class="small_icon"><img src="" th:src="@{/images/mark.png}"></div>
+                    <div class="lang" key="">Monitoring of test results (weekly)</div>
+                </div>
+                <div class="my_block">
+                    <div class="small_icon"><img src="" th:src="@{/images/mark.png}"></div>
+                    <div class="lang" key="">Effective methods of increasing knowledge</div>
+                </div>
+            </div>
+            <div class="margin">
+                <div class="my_block">
+                    <div class="small_icon"><img src="" th:src="@{/images/mark.png}"></div>
+                    <div class="lang" key="">Providing psychological assistance</div>
+                </div>
+                <div class="my_block">
+                    <div class="small_icon"><img src="" th:src="@{/images/mark.png}"></div>
+                    <div class="lang" key="">Adaptation to student life</div>
+                </div>
+                <div class="my_block">
+                    <div class="small_icon"><img src="" th:src="@{/images/mark.png}"></div>
+                    <div class="lang" key="">100% free preparation for the UNT</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

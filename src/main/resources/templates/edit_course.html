@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Course</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Edit Course</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" th:href="@{/courses}">Courses</a>
+        </li>
+    </ul>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+            <h1>Edit Course</h1>
+            <div class="card-body">
+                <form th:action="@{/courses/{id} (id=${course.getCourseID()})}" th:object="${course}" method="post">
+                    <div class="form-group">
+                        <label> Course Name</label>
+                        <input type="text" name="courseName" th:field="*{courseName}"
+                               placeholder="Enter Course Name" class="form-control">
+                        <label> Course Credits</label>
+                        <input type="text" name="credits" th:field="*{credits}"
+                               placeholder="Enter Course Credits" class="form-control">
+                    </div>
+
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    background: cornflowerblue;
+}
+
+ul.my_nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: orange;
+    position: fixed;
+    display: flex;
+    overflow: auto;
+}
+
+ul.my_nav li a {
+    /*background-color: cornflowerblue;*/
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 1.5vw;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+#right_side {
+    float: end;
+}
+.all_one_row {
+    display: flex;
+    vertical-align: center;
+}
+#logo {
+    margin-left: 5%;
+    height: 80%;
+    text-align: center;
+    border: solid white;
+    padding: 0px 10px 0px 0px;
+    border-width: 0px 1px 0px 0px;
+}
+#logo img {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+}
+#my_body {
+    padding-top: 50px;
+    background-color: cornflowerblue;
+    /*position: relative;*/
+}
+#my_body img {
+    width: 100%;
+}
+#my_body h2 {
+    color: white;
+    margin: 0px 0px 0px 10px;
+}
+#info {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 50%;
+}
+#info p{
+    color: white;
+    font-family: Inter;
+    font-size: 5vw;
+    font-weight: bold;
+    line-height: 0.8;
+}
+#info h3 {
+    color: white;
+    font-family: Roboto;
+}
+.translate {
+    background: transparent;
+    border: none;
+    vertical-align: center;
+    margin: fill;
+}
+.translate img {
+    width: 50px;
+    height: 30px;
+}
+#slider {
+    position: absolute;
+    max-width: 500px;
+    max-height: 580px;
+    right: 5%;
+    top: 40%;
+}
+#feature {
+    display: block;
+}
+#feature h2 {
+    color: orange;
+    font-weight: bold;
+    font-family: "Roboto";
+    margin-left: 100px;
+}
+.my_block {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.my_block div {
+    color: orange;
+    font-size: 20px;
+    font-family: Roboto;
+}
+.small_icon {
+    margin-right: 10px;
+}
+.small_icon img{
+    width: 30px;
+    height: 30px;
+    margin: 3px auto;
+}
+.margin {
+    margin-left: 30px;
+}
